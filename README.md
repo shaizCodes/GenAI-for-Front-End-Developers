@@ -57,4 +57,15 @@ This repository contains the lessons I learn through this Coursera course. [Chec
 
 1. How would you enhance the AI-generated code to better fit your project requirements?
 
+    **A**: I would review the code, understand its logic, and write brief meaningful comments around the code snippet.
+
 2. What additional features might improve the user experience of the modal window?
+
+    **A**: Some additional features that could improve the user experience of the modal window include:
+    * Allowing the modal to be draggable or resizable.
+    * Making the modal accessible by supporting keyboard navigation and screen readers.
+    * Providing customizable buttons (e.g., "Cancel", "Confirm") and supporting callback functions.
+    * Adding smooth open/close animations for better visual feedback.
+    * Preventing background scrolling when the modal is open.
+    * Supporting focus trapping to keep keyboard focus within the modal.
+    * Offering responsive design so the modal works well on all devices.
