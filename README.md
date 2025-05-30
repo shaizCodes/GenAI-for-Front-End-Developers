@@ -11,7 +11,7 @@ This repository contains the lessons I learn through this Coursera course. [Chec
 * [GenAI and Front End Developer: Glossary](./Glossary.md)
 * [History & Background for GenAI and Front End Developer](./GenAI_history.md)
 * [Demo for UI Design with GenAI Tools](./designs/README.md)
-* Demo for Code Generation with GitHub Copilot
+* [Demo for Code Generation with GitHub Copilot](./codes/README.md)
 * Remediating Risks and Ethical Concerns
 * Demo for Building a Responsive Web-Page with ChatGPT-4
 * Demo for Automated Testing with GenAI
