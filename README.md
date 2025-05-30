@@ -18,3 +18,20 @@ This repository contains the lessons I learn through this Coursera course. [Chec
 * Practice Project for Front End Developers
 * Assessment for Front End Developers
 * Closing Thoughts: What's Next
+
+## Exercices
+
+### Design Challenge
+
+**Scenario**: You are a designing a new music streaming app. The home screen should feature trending songs, personalized playlists, and a search bar.
+
+**Task**:
+
+* [ ] Generate an initial home screen design for the music streaming app.
+* [ ] Create at least 2 variations of the design.
+* [ ] Tailor one of the designs for a different theme (e.g., podcast-focused).
+
+#### Open Ended Questions
+
+1. How would you enhance the AI-generated design to align with your unique creative vision?
+2. What additional features might improve the user experience of the music streaming app?
