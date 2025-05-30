@@ -36,4 +36,9 @@ This repository contains the lessons I learn through this Coursera course. [Chec
 #### Open Ended Questions
 
 1. How would you enhance the AI-generated design to align with your unique creative vision?
+
+    **A**: I would give small and simple intructions to GenAI to fix minor things for me. I prefer using Google Stitch and I copy the designs to Figma where I can modify those according to my taste.
+
 2. What additional features might improve the user experience of the music streaming app?
+
+    **A**: AI integrated voice and image searches can enhance user experience by making it easy to find songs by recording background music or scanning album covers or lyrics.
