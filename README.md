@@ -69,3 +69,7 @@ This repository contains the lessons I learn through this Coursera course. [Chec
     * Preventing background scrolling when the modal is open.
     * Supporting focus trapping to keep keyboard focus within the modal.
     * Offering responsive design so the modal works well on all devices.
+
+### [Responsive Webpage Showcase](./peer-graded-assignment/README.md) (Optional)
+
+* Please [refer to the README.md](./peer-graded-assignment/README.md) file in the `peer-graded-assignment/` directory for detailed instructions on how to complete this assignment.
