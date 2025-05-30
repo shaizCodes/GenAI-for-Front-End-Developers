@@ -9,7 +9,7 @@ This repository contains the lessons I learn through this Coursera course. [Chec
 
 * Introduction to GenAI for Front End Developer
 * [GenAI and Front End Developer: Glossary](./Glossary.md)
-* History & Background for GenAI and Front End Developer
+* [History & Background for GenAI and Front End Developer](./GenAI_history.md)
 * Demo for UI Design with GenAI Tools
 * Demo for Code Generation with GitHub Copilot
 * Remediating Risks and Ethical Concerns
