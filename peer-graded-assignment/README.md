@@ -4,11 +4,17 @@ This is a practice peer-graded assignment to create a responsive webpage using G
 
 ## Step-By-Step Assignment Instructions
 
-- [ ] **Select your favorite GenAI Tool**.
+- [x] **Select your favorite GenAI Tool**.
 
-- [ ] **Generate a UI Design**: Use GenAI tool to generate a UI design for a "User Profile" page in a web application. The design should include sections for user information, profile picture, recent activities, and settings. You can start with a sketch, like we did in the demonstration, if you like.
+  - I prefer using [Google Stitch](https://stitch.withgoogle.com/) for generating UI designs and code snippets.
 
-- [ ] **Refine and Iterate**: Collaborate with the GenAI tool to refine and iterate on the UI design.
+- [x] **Generate a UI Design**: Use GenAI tool to generate a UI design for a "User Profile" page in a web application. The design should include sections for user information, profile picture, recent activities, and settings. You can start with a sketch, like we did in the demonstration, if you like.
+
+  - **Initial Design**: ![Initial design of User Profile screen](./design/user-profile-web-app.png).
+
+- [x] **Refine and Iterate**: Collaborate with the GenAI tool to refine and iterate on the UI design.
+
+  - **Refined Design**: ![Refined design of User Profile screen](./design/user-profile-web-app-v1.png).
 
 - [ ] **Translate Design into Code**: Use GenAI to convert the final UI design into HTML and CSS. Ensure the layout is responsive and visually appealing.
 
