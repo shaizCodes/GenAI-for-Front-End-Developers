@@ -49,9 +49,9 @@ This repository contains the lessons I learn through this Coursera course. [Chec
 
 **Task**:
 
-* [ ] Generate a function to open and close the modal window.
-* [ ] Implement the functionality to close the modal when clicking outside of it or pressing the "Esc" key.
-* [ ] Integrate the generated code into your existing project and test it.
+* [x] Generate a function to open and close the modal window.
+* [x] Implement the functionality to close the modal when clicking outside of it or pressing the "Esc" key.
+* [x] Integrate the generated code into your existing project and test it.
 
 **Open Ended Questions**:
 

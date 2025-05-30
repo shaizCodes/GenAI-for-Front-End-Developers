@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .modal {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 1);
+            border: 1px solid black;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .modal__content {
+            border: 1px solid black;
+            display: flex;
+            gap: 0;
+            flex-direction: column;
+        }
+        .modal__close-button {
+            border: 1px solid black;
+            background-color: rgb(255, 0, 0);
+            color: rgb(255, 255, 255);
+            align-self: flex-end;
+        }
+        .modal__text {
+            padding-inline: 1em;
+        }
+        .modal--hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="myModal" class="modal modal--hidden">
+        <div class="modal__content">
+            <button class="modal__close-button" onclick="closeModal('myModal')" aria-label="close modal">&times;</button>
+            <p class="modal__text">It is a modal. Try closing it...</p>
+        </div>
+    </div>
+
+    <button class="modal__open-button" onclick="openModal('myModal')">Open Modal</button>
+
+    <script src="modal.js"></script>
+</body>
+</html>
