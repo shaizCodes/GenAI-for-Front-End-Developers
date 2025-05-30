@@ -28,7 +28,7 @@ This repository contains the lessons I learn through this Coursera course. [Chec
 **Task**:
 
 * [x] Generate an initial home screen design for the music streaming app.
-[View the home screen.](./designs/music-streaming-app/music-streaming-app.png)
+[View the home screen.](./designs/music-streaming-app/README.md#initial-design)
 * [x] Create at least 2 variations of the design.
 * [x] Tailor one of the designs for a different theme (e.g., podcast-focused).
 [View the design iterations for Music Streaming app](./designs/music-streaming-app/README.md)
