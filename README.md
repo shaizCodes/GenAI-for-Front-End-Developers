@@ -33,7 +33,7 @@ This repository contains the lessons I learn through this Coursera course. [Chec
 * [x] Tailor one of the designs for a different theme (e.g., podcast-focused).
 [View the design iterations for Music Streaming app](./designs/music-streaming-app/README.md)
 
-#### Open Ended Questions
+**Open Ended Questions**:
 
 1. How would you enhance the AI-generated design to align with your unique creative vision?
 
@@ -42,3 +42,19 @@ This repository contains the lessons I learn through this Coursera course. [Chec
 2. What additional features might improve the user experience of the music streaming app?
 
     **A**: AI integrated voice and image searches can enhance user experience by making it easy to find songs by recording background music or scanning album covers or lyrics.
+
+### Coding Challenge
+
+**Scenario**: You are adding a feature to a web app that displays a modal window when a button is clicked. The modal should close when the user clicks outside of it or presses the "Esc" key.
+
+**Task**:
+
+* [ ] Generate a function to open and close the modal window.
+* [ ] Implement the functionality to close the modal when clicking outside of it or pressing the "Esc" key.
+* [ ] Integrate the generated code into your existing project and test it.
+
+**Open Ended Questions**:
+
+1. How would you enhance the AI-generated code to better fit your project requirements?
+
+2. What additional features might improve the user experience of the modal window?
