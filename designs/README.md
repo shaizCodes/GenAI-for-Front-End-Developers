@@ -23,7 +23,7 @@ It contains a list of UI designs produced by prompts to a Generative AI tool.
 
     > | Google Stich | ChatGPT |
     > | :----------: | :-----: |
-    > | ![Banking App - Google Stitch](./banking-app-stitch.png) | ![Banking App - ChatGPT](./banking-app-chatgpt.png) |
+    > | ![Banking App - Google Stitch](./banking-app/banking-app-stitch.png) | ![Banking App - ChatGPT](./banking-app/banking-app-chatgpt.png) |
 
 2. **Prompt**:
 
@@ -33,7 +33,7 @@ It contains a list of UI designs produced by prompts to a Generative AI tool.
 
     > | Google Stich | ChatGPT |
     > | :----------: | :-----: |
-    > | ![Banking App v1 - Google Stitch](./banking-app-stitch-v1.png) | ![Banking App v1 - ChatGPT](./banking-app-chatgpt-v1.png) |
+    > | ![Banking App v1 - Google Stitch](./banking-app/banking-app-stitch-v1.png) | ![Banking App v1 - ChatGPT](./banking-app/banking-app-chatgpt-v1.png) |
 
 3. **Prompt**:
 
@@ -43,7 +43,7 @@ It contains a list of UI designs produced by prompts to a Generative AI tool.
 
     > | Google Stich | ChatGPT |
     > | :----------: | :-----: |
-    > | ![Banking App v2 - Google Stitch](./banking-app-stitch-v2.png) | ![Banking App v2 - ChatGPT](./banking-app-chatgpt-v2.png) |
+    > | ![Banking App v2 - Google Stitch](./banking-app/banking-app-stitch-v2.png) | ![Banking App v2 - ChatGPT](./banking-app/banking-app-chatgpt-v2.png) |
 
 4. **Prompt**:
 
@@ -53,14 +53,14 @@ It contains a list of UI designs produced by prompts to a Generative AI tool.
 
     > | Google Stich | ChatGPT |
     > | :----------: | :-----: |
-    > | ![Fitness App - Google Stitch](./fitness-app-stitch.png) | ![Fitness App - ChatGPT](./fitness-app-chatgpt.png) |
+    > | ![Fitness App - Google Stitch](./fitness-app/fitness-app-stitch.png) | ![Fitness App - ChatGPT](./fitness-app/fitness-app-chatgpt.png) |
     >
     > [!NOTE]
     > ChatGPT ignored the previous context, whereas, Stitch considered it for the new design.
 
     The same above prompt in a separate Google Stitch chat produced the following design due to the free context there rather than the restrictive one in current chat.
 
-    > ![Fitness App produced in a separate chat - Google Stitch](./fitness-app-stitch-in-a-separate-chat.png)
+    > ![Fitness App produced in a separate chat - Google Stitch](./fitness-app/fitness-app-stitch-in-a-separate-chat.png)
 
 5. **Prompt**:
 
@@ -70,8 +70,8 @@ It contains a list of UI designs produced by prompts to a Generative AI tool.
 
     > | Google Stich | ChatGPT |
     > | :----------: | :-----: |
-    > | ![E-Commerce App - Google Stitch](./ecommerce-app-stitch.png) | ![E-Commerce App - ChatGPT](./ecommerce-app-chatgpt.png) |
+    > | ![E-Commerce App - Google Stitch](./ecommerce-app/ecommerce-app-stitch.png) | ![E-Commerce App - ChatGPT](./ecommerce-app/ecommerce-app-chatgpt.png) |
 
     And the same prompt in a separate Google Stitch chat produced the following design.
 
-    > | ![E-Commerce App produced in a separate chat - Google Stitch](./ecommerce-app-stitch-in-a-separate-chat.png)
+    > | ![E-Commerce App produced in a separate chat - Google Stitch](./ecommerce-app/ecommerce-app-stitch-in-a-separate-chat.png)
