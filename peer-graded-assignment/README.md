@@ -1,6 +1,6 @@
 # Practice Peer-graded Assignment: Responsive Webpage Showcase
 
-This is a practice peer-graded assignment to create a responsive webpage using GenAI tools.
+This is a practice peer-graded assignment to create a responsive webpage using GenAI tools. [Check out the live preview here](./project/index.html).
 
 ## Step-By-Step Assignment Instructions
 

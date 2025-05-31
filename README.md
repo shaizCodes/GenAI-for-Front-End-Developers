@@ -1,6 +1,6 @@
 # [GenAI for Front-End Developers](https://www.coursera.org/learn/genai-for-front-end-developers)
 
-This repository contains the lessons I learn through this Coursera course. [Check more details about the course here](https://www.coursera.org/learn/genai-for-front-end-developers).
+This repository contains the lessons I learn through this Coursera course. [Read more details about the course here](https://www.coursera.org/learn/genai-for-front-end-developers).
 
 * Instructors: [Karlis Zars](https://www.coursera.org/instructor/~149442492), [Starweaver Instructor Team](https://www.coursera.org/instructor/~141793623)
 * Offered By **Coursera** instrctor network
@@ -73,3 +73,4 @@ This repository contains the lessons I learn through this Coursera course. [Chec
 ### [Responsive Webpage Showcase](./peer-graded-assignment/README.md) (Optional)
 
 * Please [refer to the README.md](./peer-graded-assignment/README.md) file in the `peer-graded-assignment/` directory for detailed instructions on how to complete this assignment.
+* Check out the [live preview here](./peer-graded-assignment/project/index.html).
