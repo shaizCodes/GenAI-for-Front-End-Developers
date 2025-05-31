@@ -15,7 +15,10 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Custom stylesheet -->
     <link rel="stylesheet" href="./style.css">
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&icon_names=search,menu&display=block">
 </head>
 
 <body>
@@ -35,7 +38,7 @@
                 <a class="nav__link" href="#">Explore</a>
                 <a class="nav__link" href="#">Notifications</a>
                 <a class="nav__link" href="#">Messages</a>
-                <span class=" nav__button icon" role="button" aria-label="Open Menu"></span>
+                <span class="nav__button" role="button" aria-label="Open Menu"><span class="icon material-icons">menu</span></span>
             </div>
             <label class="search-bar">
                     <div class="search-bar__icon">
@@ -49,7 +52,7 @@
                     <input placeholder="Search" class="search-bar__input" value="" />
             </label>
             <div class="avatar">
-                <img class="avatar__image" src="./assets/avatar.png" alt="User profile">
+                <img class="avatar__image icon" src="./assets/avatar.png" alt="User profile">
             </div>
         </header>
         <div class="layer-1 px-40 flex flex-1 justify-center py-5">
