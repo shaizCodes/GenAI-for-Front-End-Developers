@@ -117,14 +117,71 @@
 
 .main {
     padding: 2em 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
+
 .user-section {
-    border: 2px dashed red !important;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-inline: auto;
+    gap: 1em;
+}
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+.user-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.user__image {
+    display: inline-flex;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #E7EDF4;
+}
+.user__name {
+    color: #0D141C;
+    font-size: 22px;
+    font-weight: bold;
+    font-weight: 600;
     text-align: center;
+}
+.user__id,
+.user__joining-date {
+    color: #49739C;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+.follow-user-button {
+    min-width: 84px;
+    max-width: 480px;
+    width: 100%;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-wrap: nowrap;
+    background-color: #E7EDf4;
+    color: #0D141C;
+    font-weight: bold;
+    font-size: small;
+    padding: 0.75em 1em;
+    border: none;
+    border-radius: 2em;
 }
 
 @media screen and (max-width: 1100px) {
