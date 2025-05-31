@@ -73,4 +73,4 @@ This repository contains the lessons I learn through this Coursera course. [Read
 ### [Responsive Webpage Showcase](./peer-graded-assignment/README.md) (Optional)
 
 * Please [refer to the README.md](./peer-graded-assignment/README.md) file in the `peer-graded-assignment/` directory for detailed instructions on how to complete this assignment.
-* Check out the [live preview here](./peer-graded-assignment/project/index.html).
+* Check out the [live preview here](https://shaizcodes.github.io/GenAI-for-Front-End-Developers/peer-graded-assignment/project/).
