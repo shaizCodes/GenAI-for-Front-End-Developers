@@ -3,7 +3,7 @@
 It contains a list of UI designs produced by prompts to a Generative AI tool.
 
 * [*View the UI designs on Figma*](https://www.figma.com/design/meMMZoNFw2ycGmFILwug3T/Google-Stitch-Designs?node-id=0-1&p=f&t=O1VSQYcHoYo2yvhN-0)
-* Or [*View Google Stitch chat*](https://stitch.withgoogle.com/projects/17161384992744200327) that generated the UI designs
+* ~~Or [*View Google Stitch chat*](https://stitch.withgoogle.com/projects/17161384992744200327) that generated the UI designs~~
 * Or [*View ChatGPT chat*](https://chatgpt.com/share/6839a17e-58cc-8006-b257-6e5870f0c3e2) for some UI designs
 
 ## Generative AI Tools
@@ -21,7 +21,7 @@ It contains a list of UI designs produced by prompts to a Generative AI tool.
 
     **Response**:
 
-    > | Google Stich | ChatGPT |
+    > | Google Stitch | ChatGPT |
     > | :----------: | :-----: |
     > | ![Banking App - Google Stitch](./banking-app/banking-app-stitch.png) | ![Banking App - ChatGPT](./banking-app/banking-app-chatgpt.png) |
 
@@ -31,7 +31,7 @@ It contains a list of UI designs produced by prompts to a Generative AI tool.
 
     **Response**:
 
-    > | Google Stich | ChatGPT |
+    > | Google Stitch | ChatGPT |
     > | :----------: | :-----: |
     > | ![Banking App v1 - Google Stitch](./banking-app/banking-app-stitch-v1.png) | ![Banking App v1 - ChatGPT](./banking-app/banking-app-chatgpt-v1.png) |
 
@@ -41,7 +41,7 @@ It contains a list of UI designs produced by prompts to a Generative AI tool.
 
     **Response**:
 
-    > | Google Stich | ChatGPT |
+    > | Google Stitch | ChatGPT |
     > | :----------: | :-----: |
     > | ![Banking App v2 - Google Stitch](./banking-app/banking-app-stitch-v2.png) | ![Banking App v2 - ChatGPT](./banking-app/banking-app-chatgpt-v2.png) |
 
@@ -51,7 +51,7 @@ It contains a list of UI designs produced by prompts to a Generative AI tool.
 
     **Response**:
 
-    > | Google Stich | ChatGPT |
+    > | Google Stitch | ChatGPT |
     > | :----------: | :-----: |
     > | ![Fitness App - Google Stitch](./fitness-app/fitness-app-stitch.png) | ![Fitness App - ChatGPT](./fitness-app/fitness-app-chatgpt.png) |
     >
@@ -68,7 +68,7 @@ It contains a list of UI designs produced by prompts to a Generative AI tool.
 
     **Response**:
 
-    > | Google Stich | ChatGPT |
+    > | Google Stitch | ChatGPT |
     > | :----------: | :-----: |
     > | ![E-Commerce App - Google Stitch](./ecommerce-app/ecommerce-app-stitch.png) | ![E-Commerce App - ChatGPT](./ecommerce-app/ecommerce-app-chatgpt.png) |
 
