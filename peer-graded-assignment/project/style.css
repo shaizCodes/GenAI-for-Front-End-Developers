@@ -9,17 +9,24 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5em 1em;
     background-color: #f8f9fa;
     white-space: nowrap;
     border-bottom: 2px solid #e7edf4;
-    padding: 1em 2em;
+    padding: .75em 2.5em;
     gap: 1em;
 }
 
-.nav {
-    display: flex;
+.brand,
+.nav,
+.nav__button,
+.search-bar,
+.avatar {
+    display: inline-flex;
     align-items: center;
+    height: 2.5em;
+}
+
+.nav {
     gap: 2em;
     padding-inline: 1em;
     flex: 1 1 auto;
@@ -31,8 +38,7 @@
 }
 
 .brand {
-    display: inline-flex;
-    align-self: center;
+    padding-inline: 1em;
     gap: 1em;
     color: #0d141c;
 }
@@ -45,6 +51,7 @@
     width: 1.5rem;
     height: 1.5rem;
     color: #0D141C;
+    align-self: center;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -57,16 +64,17 @@
 }
 
 .search-bar {
-    display: flex;
     border: none;
     background-color: #E7EDf4;
     color: #49739C;
-    align-items: center;
     padding-inline: 0.5em;
     border-radius: 2em;
     min-width: fit-content;
 }
 
+.search-bar__icon .icon {
+    fill: #49739C;
+}
 .search-bar__input {
     width: 100%;
     overflow: hidden;
@@ -92,12 +100,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     aspect-ratio: 1;
-    width: 2rem;
-    min-width: 2rem;
+    width: 2.5rem;
+    min-width: 2.5rem;
     border-radius: 2.5rem;
     overflow: hidden;
-    display: inline-flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -150,9 +156,12 @@
     .nav__link {
         display: none;
     }
-    .nav .icon {
+    .nav__button {
         display: inline-flex;
         align-self: flex-end;
+    }
+    .nav__button .icon {
+        display: inline-flex;
     }
     .search-bar {
         margin-left: auto;
@@ -165,7 +174,6 @@
     }
     .search-bar {
         width: fit-content;
-        padding: 0;
         justify-content: center;
         align-items: center;
     }
