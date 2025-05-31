@@ -3,3 +3,9 @@
     margin: 0;
     padding: 0;
 }
+
+/* adding borders to see how much space each element takes up and what it nests */
+
+* {
+    border: 1px solid red;
+}
