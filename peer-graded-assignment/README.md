@@ -16,7 +16,9 @@ This is a practice peer-graded assignment to create a responsive webpage using G
 
   - **Refined Design**: ![Refined design of User Profile screen](./design/user-profile-web-app-v1.png)
 
-- [ ] **Translate Design into Code**: Use GenAI to convert the final UI design into HTML and CSS. Ensure the layout is responsive and visually appealing.
+- [x] **Translate Design into Code**: Use GenAI to convert the final UI design into HTML and CSS. Ensure the layout is responsive and visually appealing.
+
+  - I generated most of the stuff from scratch to boost my confidence in CSS and HTML. You can [open index.html](./project/index.html) and [view styles.css](./project/style.css) in the project directory.
 
 - [ ] **Submit 2 screenshots of your final UI**: Use the 2 screenshots to demonstrate the interactivity or responsiveness of your webpage.
 
