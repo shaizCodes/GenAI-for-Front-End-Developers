@@ -42,6 +42,8 @@ body {
     flex: 1 1 auto;
 }
 .nav__link {
+    font-size: small;
+    font-weight: bold;
     padding: 0.25em 1em;
     text-align: center;
     color: #0D141C !important;
@@ -126,7 +128,7 @@ body {
 
 
 .main {
-    padding: 2em 3em;
+    padding: 2em 5em;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -224,7 +226,7 @@ body {
 }
 .post {
     display: grid;
-    grid-template-columns: 1fr 400px;
+    grid-template-columns: 1fr 300px;
     gap: 1em;
 }
 .post__text-section {
@@ -232,21 +234,29 @@ body {
     flex-direction: column;
     flex: 1 1 auto;
     gap: 0.5em;
+    max-height: 170px;
 }
 .post__statistics,
 .post__author {
+    display: inline-flex;
     color: #49739C;
     font-size: small;
     font-weight: normal;
 }
 .post__content {
+    display: inline-flex;
     color: #0D141C;
     font-weight: bold;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;       /* Number of lines to show */
+    overflow: hidden;
 }
 .post__image-section {
-    gap: 0.5em;
     overflow: hidden;
     border-radius: 0.75em;
+    height: 100%;
 }
 .post__image {
     aspect-ratio: 16 / 9;
@@ -254,6 +264,11 @@ body {
     object-fit: cover;
     border-radius: 0.75em;
     background-color: #E7EDF4;
+}
+.post__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -272,6 +287,12 @@ body {
     .nav .nav__link:last-of-type {
         display: none;
     }
+    .header {
+        padding: 0.75em 1.5em;
+    }
+    .main {
+        padding: 2em 2.5em;
+    }
 }
 
 @media screen and (max-width: 870px) {
@@ -280,7 +301,7 @@ body {
         align-items: stretch;
         gap: 2px;
         flex-grow: 0;
-        order: 1;
+        order: -1;
         padding: 0;
     }
     .nav__link {
@@ -296,11 +317,27 @@ body {
     .search-bar {
         margin-left: auto;
     }
+    .post {
+        grid-template-columns: 1fr;
+        border: 1px solid #e7edf4;
+        border-radius: 1em;
+    }
+    .post__text-section {
+        order: 1;
+        padding-inline: 1em;
+        padding-bottom: 1em;
+    }
+    .post__image-section {
+        order: -1;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .header {
-        padding-inline: 0.75em;
+        padding: 0.75em 1.5em;
+    }
+    .main {
+        padding: 2em 1.5em;
     }
     .search-bar {
         width: fit-content;
@@ -312,6 +349,9 @@ body {
     }
 }
 @media screen and (max-width: 420px) {
+    .main {
+        padding: 2em 1em;
+    }
     .brand__name {
         display: none;
     }
