@@ -202,6 +202,11 @@ body {
     border-radius: 2em;
 }
 
+.follow-user-button:hover {
+    background-color: #2089F3;
+    color: white;
+}
+
 .tabs {
     border-bottom: 1px solid #CEDBE8;
     display: flex;
