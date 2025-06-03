@@ -119,6 +119,26 @@
                 followButton.classList.add('following');
             }
         });
+
+        // Toggle active class for tabs such that the page does not reload
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', (event) => {
+                event.preventDefault(); // Prevent default anchor behavior
+                tabs.forEach(t => t.classList.remove('tab--active'));
+                tab.classList.add('tab--active');
+            });
+        });
+        // Add keyboard accessibility for tabs
+        tabs.forEach(tab => {
+            tab.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault(); // Prevent default action
+                    tabs.forEach(t => t.classList.remove('tab--active'));
+                    tab.classList.add('tab--active');
+                }
+            });
+        });
     </script>
 </body>
 
