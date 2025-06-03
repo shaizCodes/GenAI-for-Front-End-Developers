@@ -47,6 +47,12 @@ body {
     padding: 0.25em 1em;
     text-align: center;
     color: #0D141C !important;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    border-bottom: 2px solid #2089F3 !important;
+    cursor: pointer;
 }
 
 .brand {
