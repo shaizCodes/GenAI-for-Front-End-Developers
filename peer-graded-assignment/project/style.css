@@ -348,6 +348,11 @@ body {
     }
     .post__image-section {
         order: -1;
+        height: 200px;
+    }
+    .post__image {
+        height: 100%;
+        aspect-ratio: 16 / 9;
     }
 }
 
