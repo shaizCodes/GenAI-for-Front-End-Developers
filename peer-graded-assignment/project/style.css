@@ -224,6 +224,15 @@ body {
     color: white;
 }
 
+.follow-user-button.following {
+    background-color: red;
+    color: white;
+}
+.follow-user-button.following:hover,
+.follow-user-button.following:focus {
+    outline: 2px solid red;
+}
+
 .tabs {
     border-bottom: 1px solid #CEDBE8;
     display: flex;

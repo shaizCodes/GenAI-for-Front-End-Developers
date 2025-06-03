@@ -106,6 +106,20 @@
             </section>
         </main>
     </div>
+
+    <script>
+        // JavaScript to handle the follow button state
+        const followButton = document.querySelector('.follow-user-button');
+        followButton.addEventListener('click', () => {
+            if (followButton.classList.contains('following')) {
+                followButton.innerHTML = '<span>Follow</span>';
+                followButton.classList.remove('following');
+            } else {
+                followButton.innerHTML = '<span>Unfollow</span>';
+                followButton.classList.add('following');
+            }
+        });
+    </script>
 </body>
 
 </html>
