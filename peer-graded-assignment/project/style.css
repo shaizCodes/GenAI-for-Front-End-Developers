@@ -36,6 +36,14 @@ body {
     height: 2.5em;
 }
 
+.search-bar:hover,
+.search-bar:focus-within {
+    border: 2px solid #2089F3;
+}
+.search-bar:hover .search-bar__icon .icon {
+    fill: #2089F3;
+}
+
 .nav {
     gap: 2em;
     padding-inline: 1em;
