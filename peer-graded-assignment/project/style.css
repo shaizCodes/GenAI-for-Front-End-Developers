@@ -340,6 +340,11 @@ body {
         grid-template-columns: 1fr;
         border: 1px solid #e7edf4;
         border-radius: 1em;
+        cursor: pointer;
+    }
+    .post:hover {
+        background-color: #E7EDF4;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .post__text-section {
         order: 1;
