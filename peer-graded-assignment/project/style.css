@@ -63,6 +63,12 @@ body {
     cursor: pointer;
 }
 
+.nav__link:focus {
+    outline: 2px solid #2089F3;
+    outline-offset: 2px;
+    color: #0D141C !important;
+}
+
 .brand {
     padding-inline: 1em;
     gap: 1em;
@@ -235,6 +241,11 @@ body {
     font-weight: bolder;
     color: #49739C;
     text-decoration: none;
+}
+.tab:focus {
+    outline: 2px solid #2089F3;
+    outline-offset: 2px;
+    color: #0D141C;
 }
 .tab--active {
     color: #0D141C;
