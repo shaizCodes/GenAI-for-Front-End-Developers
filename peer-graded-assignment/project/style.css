@@ -223,6 +223,7 @@ body {
     font-size: small;
     font-weight: bolder;
     color: #49739C;
+    text-decoration: none;
 }
 .tab--active {
     color: #0D141C;
@@ -235,6 +236,12 @@ body {
     justify-content: space-between;
     gap: 1em;
 }
+
+.tab:hover {
+    color: #0D141C;
+    cursor: pointer;
+}
+
 .post {
     display: grid;
     grid-template-columns: 1fr 300px;
