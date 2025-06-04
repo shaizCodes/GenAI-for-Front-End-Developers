@@ -114,10 +114,10 @@
         // Add click as well as keydown event listeners for accessibility
         menuButton.addEventListener('keydown', (event) => {
             if (event.key === 'Enter' || event.key === ' ') {
-            event.preventDefault(); // Prevent default action
-            nav.classList.toggle('nav--active');
-            // change the .nav__button icon
-            menuButton.firstChild.textContent = nav.classList.contains('nav--active') ? "close" : "menu";
+                event.preventDefault(); // Prevent default action
+                nav.classList.toggle('nav--active');
+                // change the .nav__button icon
+                menuButton.firstChild.textContent = nav.classList.contains('nav--active') ? "close" : "menu";
             }
         });
         menuButton.addEventListener('click', () => {
@@ -126,7 +126,13 @@
             menuButton.firstChild.textContent = nav.classList.contains('nav--active') ? "close" : "menu";
         });
 
-        // Close navigation when focus moves outside nav links and button
+        // Close navigation when focus moves outside nav links and button, or Escape key is pressed
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && nav.classList.contains('nav--active')) {
+                nav.classList.remove('nav--active');
+                menuButton.firstChild.textContent = "menu";
+            }
+        });
         const navLinks = nav.querySelectorAll('.nav__link');
         const focusableNavElements = [...navLinks, menuButton];
 
