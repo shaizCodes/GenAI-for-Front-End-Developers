@@ -35,7 +35,7 @@
                 <a class="nav__link" href="#">Explore</a>
                 <a class="nav__link" href="#">Notifications</a>
                 <a class="nav__link" href="#">Messages</a>
-                <span class="nav__button" role="button" aria-label="Open Menu"><span class="icon material-icons">menu</span></span>
+                <span class="nav__button" tabindex="1" role="button" aria-label="Open Menu"><span class="icon material-icons">menu</span></span>
             </div>
             <label class="search-bar">
                 <div class="search-bar__icon">
@@ -108,6 +108,46 @@
     </div>
 
     <script>
+        // Ensure the menu button toggles the navigation menu
+        const menuButton = document.querySelector('.nav__button');
+        const nav = document.querySelector('.nav');
+        // Add click as well as keydown event listeners for accessibility
+        menuButton.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault(); // Prevent default action
+            nav.classList.toggle('nav--active');
+            // change the .nav__button icon
+            menuButton.firstChild.textContent = nav.classList.contains('nav--active') ? "close" : "menu";
+            }
+        });
+        menuButton.addEventListener('click', () => {
+            nav.classList.toggle('nav--active');
+            // change the .nav__button icon
+            menuButton.firstChild.textContent = nav.classList.contains('nav--active') ? "close" : "menu";
+        });
+
+        // Close navigation when focus moves outside nav links and button
+        const navLinks = nav.querySelectorAll('.nav__link');
+        const focusableNavElements = [...navLinks, menuButton];
+
+        document.addEventListener('focusin', (event) => {
+            if (nav.classList.contains('nav--active')) {
+            const isInNav = focusableNavElements.some(el => el === event.target);
+            if (!isInNav) {
+                nav.classList.remove('nav--active');
+                menuButton.firstChild.textContent = "menu";
+            }
+            }
+        });
+
+        // Close navigation when clicking outside the nav
+        document.addEventListener('click', (event) => {
+            if (nav.classList.contains('nav--active') && !nav.contains(event.target) && !menuButton.contains(event.target)) {
+                nav.classList.remove('nav--active');
+                menuButton.firstChild.textContent = "menu";
+            }
+        });
+
         // JavaScript to handle the follow button state
         const followButton = document.querySelector('.follow-user-button');
         followButton.addEventListener('click', () => {
