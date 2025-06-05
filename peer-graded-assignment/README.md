@@ -20,12 +20,22 @@ This is a practice peer-graded assignment to create a responsive webpage using G
 
   - I generated most of the stuff from scratch to boost my confidence in CSS and HTML. You can [open index.html](./project/index.html) and [view styles.css](./project/style.css) in the project directory.
 
-- [ ] **Submit 2 screenshots of your final UI**: Use the 2 screenshots to demonstrate the interactivity or responsiveness of your webpage.
+- [x] **Submit 2 screenshots of your final UI**: Use the 2 screenshots to demonstrate the interactivity or responsiveness of your webpage.
+
+  - Desktop View: ![Desktop View Screenshot](./screenshots/desktop-view.png)
+  - Mobile View: ![Mobile View Screenshot](./screenshots/mobile-view.png)
 
 ## Optional Steps
 
 - [x] **Add Interactivity**: Create JavaScript code to add interactivity to the user profile page, such as editing user information and updating the profile picture.
 
-- [ ] **Generate an Additional UI Component**: Ask the GenAI tool to generate another UI component for a different page in the application, such as a "Dashboard" or "Settings" page. Integrate this new component into your project.
+  - Navigation Menu: Implemented a responsive navigation menu that toggles on smaller screens.
+  - Tabs: Created a tabbed interface for switching between different content sections (Posts, Replies, Media, Likes).
+  - Modal for User Profile update: Created a modal that allows users to update their name and profile picture.
+
+- [x] **Generate an Additional UI Component**: Ask the GenAI tool to generate another UI component for a different page in the application, such as a "Dashboard" or "Settings" page. Integrate this new component into your project.
+
+  - Modal to update user information:
+  ![Modal to edit user profile](./screenshots/mo)
 
 - [ ] **Test the Implementation**: Test the entire implementation across different browsers and devices to ensure compatibility and responsiveness.

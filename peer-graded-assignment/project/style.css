@@ -472,9 +472,6 @@ body {
     .search-bar__input {
         display: none;
     }
-    .modal__content {
-        border: 2px solid red;
-    }
 }
 
 @media screen and (max-width: 940px) {
