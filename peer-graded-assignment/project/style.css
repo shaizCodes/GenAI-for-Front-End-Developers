@@ -513,7 +513,8 @@ body {
     .nav__link {
         display: none;
     }
-    .nav--active .nav__link {
+    .nav--active .nav__link,
+    .nav--active .nav__link:last-of-type {
         display: inline-block;
         padding: 0.5em 1em;
         width: 100%;
