@@ -99,3 +99,7 @@ This repository contains the lessons I learn through this Coursera course. [Read
     * Testing for SQL injection or other security vulnerabilities.
     * Verifying that the form behaves correctly with various input types (e.g., special characters, long strings).
     * Ensuring that the form is accessible (e.g., keyboard navigation, screen reader compatibility).
+
+## License
+
+This repository is licensed under the [MIT License](./LICENSE).
