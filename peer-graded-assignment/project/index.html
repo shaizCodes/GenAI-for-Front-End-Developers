@@ -17,6 +17,59 @@
     <link rel="stylesheet" href="./style.css">
     <!-- Google Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&icon_names=search,menu&display=block">
+
+    <!-- Jasmine - Testing framework -->
+    <!-- Jasmine core CSS and JS -->
+    <link rel="stylesheet" href="https://unpkg.com/jasmine-core/lib/jasmine-core/jasmine.css">
+    <script src="https://unpkg.com/jasmine-core/lib/jasmine-core/jasmine.js"></script>
+    <script src="https://unpkg.com/jasmine-core/lib/jasmine-core/jasmine-html.js"></script>
+    <script src="https://unpkg.com/jasmine-core/lib/jasmine-core/boot0.js"></script>
+    <script src="https://unpkg.com/jasmine-core/lib/jasmine-core/boot1.js"></script>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            describe("User Profile Page Tests", function () {
+
+                it("should display the brand name ConnectHub", function () {
+                    const brand = document.querySelector('.brand__name');
+                    expect(brand.textContent.trim()).toBe("ConnectHub");
+                });
+
+                it("should toggle the navigation menu when nav__button is clicked", function () {
+                    const menuButton = document.querySelector('.nav__button');
+                    const nav = document.querySelector('.nav');
+                    const initialState = nav.classList.contains('nav--active');
+
+                    menuButton.click();
+                    expect(nav.classList.contains('nav--active')).toBe(!initialState);
+
+                    menuButton.click();
+                    expect(nav.classList.contains('nav--active')).toBe(initialState);
+                });
+
+                it("should toggle follow button text", function () {
+                    const followButton = document.querySelector('.follow-user-button');
+                    const original = followButton.textContent.trim();
+
+                    followButton.click();
+                    expect(followButton.textContent.trim()).not.toBe(original);
+
+                    followButton.click();
+                    expect(followButton.textContent.trim()).toBe(original);
+                });
+
+                it("should display user profile information correctly", function () {
+                    const userName = document.querySelector('.user__name');
+                    const userId = document.querySelector('.user__id');
+                    const userJoiningDate = document.querySelector('.user__joining-date');
+                    expect(userName.textContent.trim()).toBe("Ethan Carter");
+                    expect(userId.textContent.trim()).toBe("@ethan.c");
+                    expect(userJoiningDate.textContent.trim()).toBe("Joined in 2018");
+                });
+            });
+        });
+    </script>
+
 </head>
 
 <body>

@@ -39,4 +39,7 @@ This is a practice peer-graded assignment to create a responsive webpage using G
   - Modal to update user information:
   ![Modal to edit user profile](./screenshots/edit-profile-modal.png)
 
-- [ ] **Test the Implementation**: Test the entire implementation across different browsers and devices to ensure compatibility and responsiveness.
+- [x] **Test the Implementation**: Test the entire implementation across different browsers and devices to ensure compatibility and responsiveness.
+
+  - I integrated Jasmine testing framework to test UI values and navigation toggle button interactiity.
+  Jasmine Test Results: ![Jasmine Test Results](./screenshots/jasmie-test-coverage.png)
