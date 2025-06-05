@@ -247,6 +247,63 @@
                     `;
             }
         }
+
+        // upon clicking the user image, a modal should open where user should be able to edit their profile
+        const userImage = document.querySelector('.user__image');
+        userImage.addEventListener('click', () => {
+            let userNameElement = document.querySelector(".user-data .user__name");
+            let userImageElement = document.querySelector(".user-data .user__image");
+            // Create a modal for editing profile
+            const modal = document.createElement('div');
+            modal.classList.add('modal');
+            modal.innerHTML = `
+                <div class="modal__content">
+                    <h2 class="modal__title">Edit Profile</h2>
+                    <form class="modal__form" id="edit-profile-form">
+                        <div class="modal__form-field">
+                            <label class="modal__form-field__label" for="user_name">Name:</label>
+                            <input class="modal__form-field__input" type="text" id="user_name" name="user_name" value="${userNameElement.textContent}">
+                        </div>
+                        <div class="modal__form-field">
+                            <label class="modal__form-field__label" for="user_profile_picture">Profile Picture:</label>
+                            <input class="modal__form-field__input" type="file" id="user_profile_picture" name="user_profile_picture" accept="image/*">
+                        </div>
+                        <button class="modal__button" type="submit">Save</button>
+                    </form>
+                    <button class="modal__icon-button" aria-label="Close User Profile Modal"><span class="icon material-icons">close</span></button>
+                </div>
+            `;
+            document.body.appendChild(modal);
+            modal.classList.add('modal--open');
+
+            // Save button should update the userNameElement and userImageElement
+            const saveButton = modal.querySelector(".modal__button");
+            saveButton.addEventListener('click', (event) => {
+                event.preventDefault();
+                const userNameInput = modal.querySelector("#user_name");
+                const userImageInput = modal.querySelector("#user_profile_picture");
+                if(userNameInput.value.trim().length > 1) {
+                    userNameElement.textContent = userNameInput.value;
+                }
+                if(userImageInput.files[0]) {
+                    const file = userImageInput.files[0];
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        userImageElement.src = e.target.result;
+                    };
+                    reader.readAsDataURL(file);
+                }
+                modal.classList.remove('modal--open');
+                document.body.removeChild(modal);
+            });
+
+            // Close modal on clicking close button
+            const closeButton = modal.querySelector('.modal__icon-button');
+            closeButton.addEventListener('click', () => {
+                modal.classList.remove('modal--open');
+                document.body.removeChild(modal);
+            });
+        });
     </script>
 </body>
 

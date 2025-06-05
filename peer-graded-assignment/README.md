@@ -24,7 +24,7 @@ This is a practice peer-graded assignment to create a responsive webpage using G
 
 ## Optional Steps
 
-- [ ] **Add Interactivity**: Create JavaScript code to add interactivity to the user profile page, such as editing user information and updating the profile picture.
+- [x] **Add Interactivity**: Create JavaScript code to add interactivity to the user profile page, such as editing user information and updating the profile picture.
 
 - [ ] **Generate an Additional UI Component**: Ask the GenAI tool to generate another UI component for a different page in the application, such as a "Dashboard" or "Settings" page. Integrate this new component into your project.
 

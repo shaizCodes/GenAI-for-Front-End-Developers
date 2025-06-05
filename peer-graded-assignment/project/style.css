@@ -189,7 +189,12 @@ body {
     border-radius: 50%;
     overflow: hidden;
     background-color: #E7EDF4;
+    object-fit: contain;
 }
+.user__image:hover {
+    cursor: pointer;
+}
+
 .user__name {
     color: #0D141C;
     font-size: 22px;
@@ -204,6 +209,119 @@ body {
     font-weight: 400;
     text-align: center;
 }
+
+/* Style modals for both states; open and close */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal__title {
+    font-size: 1.5rem;
+    color: #0D141C;
+    margin-bottom: 1em;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: #49739C;
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.modal__icon-button {
+    order: -1;
+    align-self: flex-end;
+    background: none;
+    border: none;
+    color: #49739C;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.modal__icon-button:hover {
+    color: #2089F3;
+}
+
+.modal__icon-button:focus {
+    outline: 2px solid #2089F3;
+    outline-offset: 2px;
+}
+
+.modal__form-field {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5em;
+}
+
+.modal__form-field__label {
+    color: #111418;
+}
+
+.modal__form-field__input {
+    padding: 0.5em;
+    border: 1px solid #CEDBE8;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #EAEDF0;
+    color: #111418;
+}
+
+.modal__form-field__input:focus {
+    border-color: #2089F3;
+    outline: none;
+}
+.modal__form-field__input::placeholder {
+    color: #5E7287;
+}
+
+.modal__button {
+    background-color: #D6E2EF;
+    color: #111418;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    align-self: flex-end;
+    min-width: 100px;
+}
+
+.modal__button:hover,
+.modal__button:focus {
+    background-color: #176dc1;
+    color: #fff;
+}
+.modal__button:focus {
+    outline: 2px solid #2089F3;
+    outline-offset: 2px;
+}
+
 .follow-user-button {
     min-width: 84px;
     max-width: 480px;
@@ -354,7 +472,9 @@ body {
     .search-bar__input {
         display: none;
     }
-
+    .modal__content {
+        border: 2px solid red;
+    }
 }
 
 @media screen and (max-width: 940px) {
