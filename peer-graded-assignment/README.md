@@ -29,13 +29,14 @@ This is a practice peer-graded assignment to create a responsive webpage using G
 
 - [x] **Add Interactivity**: Create JavaScript code to add interactivity to the user profile page, such as editing user information and updating the profile picture.
 
-  - Navigation Menu: Implemented a responsive navigation menu that toggles on smaller screens.
-  - Tabs: Created a tabbed interface for switching between different content sections (Posts, Replies, Media, Likes).
-  - Modal for User Profile update: Created a modal that allows users to update their name and profile picture.
+  - Toggable Navigation Menu
+  - Switchable Tabs
+  - Editable User Information through a modal
+  - Interactivity Demo: ![Interactivity Demo](./demo/interactivity-demo.gif)
 
 - [x] **Generate an Additional UI Component**: Ask the GenAI tool to generate another UI component for a different page in the application, such as a "Dashboard" or "Settings" page. Integrate this new component into your project.
 
   - Modal to update user information:
-  ![Modal to edit user profile](./screenshots/mo)
+  ![Modal to edit user profile](./screenshots/edit-profile-modal.png)
 
 - [ ] **Test the Implementation**: Test the entire implementation across different browsers and devices to ensure compatibility and responsiveness.
