@@ -585,6 +585,10 @@ body {
     .brand__name {
         display: none;
     }
+    .modal__content {
+        width: 90%;
+        max-width: 400px;
+    }
 }
 
 .layer-1 {
