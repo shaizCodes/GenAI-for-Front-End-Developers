@@ -73,5 +73,22 @@ This repository contains the lessons I learn through this Coursera course. [Read
 ### [Responsive Webpage Showcase](./peer-graded-assignment/README.md) (Optional)
 
 * Please [refer to the README.md](./peer-graded-assignment/README.md) file in the `peer-graded-assignment/` directory for detailed instructions on how to complete this assignment.
-* Project Demonstration: ![Project Demonstration](./peer-graded-assignment/demo/interactivity-demo.gif)
+* Project Demonstration:
+  > ![Project Demonstration](./peer-graded-assignment/demo/interactivity-demo.gif)
 * Check out the [live preview here](https://shaizcodes.github.io/GenAI-for-Front-End-Developers/peer-graded-assignment/project/).
+
+### Testing Challenge
+
+**Scenario**: You are testing a web application's registration form. The form includes fields for username, email, password, and password confirmation. Ensure that all fields are validated correctly, and appropriate error messages are displayed.
+
+**Task**:
+
+* [ ] Generate test scripts for the registration form validation.
+* [ ] Refine the test scripts to cover edge cases (e.g., mismatched passwords, empty fields).
+* [ ] Integrate the generated scripts into your existing testing framework and execute them.
+
+**Open Ended Questions**:
+
+1. How would you enhance the AI-generated test scripts to better fit your project requirements?
+
+2. What additional test cases might improve the test coverage of the registration form?
