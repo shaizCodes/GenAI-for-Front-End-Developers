@@ -83,12 +83,19 @@ This repository contains the lessons I learn through this Coursera course. [Read
 
 **Task**:
 
-* [ ] Generate test scripts for the registration form validation.
-* [ ] Refine the test scripts to cover edge cases (e.g., mismatched passwords, empty fields).
-* [ ] Integrate the generated scripts into your existing testing framework and execute them.
+* [x] Generate test scripts for the registration form validation.
+* [x] Refine the test scripts to cover edge cases (e.g., mismatched passwords, empty fields).
+* [x] Integrate the generated scripts into your existing testing framework and execute them.
 
 **Open Ended Questions**:
 
 1. How would you enhance the AI-generated test scripts to better fit your project requirements?
 
+    **A**: I would review those scripts and add more specific test cases such as the email pattern validation, password strength validation, and ensuring that the error messages are user-friendly and informative.
+
 2. What additional test cases might improve the test coverage of the registration form?
+
+    **A**: Additional test cases could include:
+    * Testing for SQL injection or other security vulnerabilities.
+    * Verifying that the form behaves correctly with various input types (e.g., special characters, long strings).
+    * Ensuring that the form is accessible (e.g., keyboard navigation, screen reader compatibility).

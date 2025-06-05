@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing registration form using Jasmine testing framework</title>
+
+    <!-- Jasmine - Testing suite -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.6.0/jasmine.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.6.0/jasmine.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.6.0/jasmine-html.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.6.0/boot0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.6.0/boot1.min.js"></script>
+    
+    <!-- Custom CSS and JavaScript for the registration form -->
+    <style>
+        form { max-width: 400px; margin: 2rem auto; }
+        .error { color: red; font-size: 0.9em; }
+        .form-group { margin-bottom: 1rem; }
+    </style>
+    <script>
+        function validateUsername(username) {
+            if (!username) return "Username is required";
+            if (username.length < 3) return "Username must be at least 3 characters";
+            return "";
+        }
+        function validateEmail(email) {
+            if (!email) return "Email is required";
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!re.test(email)) return "Invalid email format";
+            return "";
+        }
+        function validatePassword(password) {
+            if (!password) return "Password is required";
+            if (password.length < 6) return "Password must be at least 6 characters";
+            return "";
+        }
+        function validateConfirmPassword(password, confirmPassword) {
+            if (!confirmPassword) return "Confirm password is required";
+            if (password !== confirmPassword) return "Passwords do not match";
+            return "";
+        }
+        function showError(id, message) {
+            document.getElementById(id).textContent = message;
+        }
+        function clearErrors() {
+            showError('usernameError', '');
+            showError('emailError', '');
+            showError('passwordError', '');
+            showError('confirmPasswordError', '');
+        }
+        window.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('registrationForm').addEventListener('submit', function(e) {
+                clearErrors();
+                let valid = true;
+                const username = document.getElementById('username').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const password = document.getElementById('password').value;
+                const confirmPassword = document.getElementById('confirmPassword').value;
+                const usernameError = validateUsername(username);
+                const emailError = validateEmail(email);
+                const passwordError = validatePassword(password);
+                const confirmPasswordError = validateConfirmPassword(password, confirmPassword);
+                if (usernameError) { showError('usernameError', usernameError); valid = false; }
+                if (emailError) { showError('emailError', emailError); valid = false; }
+                if (passwordError) { showError('passwordError', passwordError); valid = false; }
+                if (confirmPasswordError) { showError('confirmPasswordError', confirmPasswordError); valid = false; }
+                if (!valid) e.preventDefault();
+            });
+        });
+    </script>
+
+    <!-- Jasmine Tests -->
+    <script>
+        describe("Registration Form Validation", function() {
+            it("should require username", function() {
+                expect(validateUsername("")).toBe("Username is required");
+            });
+            it("should require username at least 3 chars", function() {
+                expect(validateUsername("ab")).toBe("Username must be at least 3 characters");
+                expect(validateUsername("abc")).toBe("");
+            });
+            it("should require email", function() {
+                expect(validateEmail("")).toBe("Email is required");
+            });
+            it("should validate email format", function() {
+                expect(validateEmail("notanemail")).toBe("Invalid email format");
+                expect(validateEmail("test@example.com")).toBe("");
+            });
+            it("should require password", function() {
+                expect(validatePassword("")).toBe("Password is required");
+            });
+            it("should require password at least 6 chars", function() {
+                expect(validatePassword("12345")).toBe("Password must be at least 6 characters");
+                expect(validatePassword("123456")).toBe("");
+            });
+            it("should require confirm password", function() {
+                expect(validateConfirmPassword("123456", "")).toBe("Confirm password is required");
+            });
+            it("should match passwords", function() {
+                expect(validateConfirmPassword("123456", "654321")).toBe("Passwords do not match");
+                expect(validateConfirmPassword("abcdef", "abcdef")).toBe("");
+            });
+        });
+    </script>
+</head>
+<body>
+    <form id="registrationForm" novalidate>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <div id="usernameError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div id="emailError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div id="passwordError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <div id="confirmPasswordError" class="error"></div>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
